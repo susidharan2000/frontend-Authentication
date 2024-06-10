@@ -16,7 +16,7 @@ const Login = ({setToken}) => {
             user_email: email,
             password: password
         };
-        await axios.post("http://localhost:4000/api/user/login",payload)
+        await axios.post("https://backend-authentication-jrpf.onrender.com/api/user/login",payload)
         .then(res=>{
           setMsg(res.data.msg);
           setToken(res.data.token);

@@ -13,7 +13,7 @@ const Profile = ({ token }) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/api/user/getuser", {
+      const response = await axios.get("https://backend-authentication-jrpf.onrender.com/api/user/getuser", {
         headers: {
           Authorization: token,
         },

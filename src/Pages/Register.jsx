@@ -22,7 +22,7 @@ const Register = () => {
             role:role
         };
         console.log(payload);
-        await axios.post("http://localhost:4000/api/user/register",payload)
+        await axios.post("https://backend-authentication-jrpf.onrender.com/api/user/register",payload)
         .then(res=>{
           setMsg(res.data.Message)
           toast.success("Registration successful!");

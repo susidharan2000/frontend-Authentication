@@ -14,7 +14,7 @@ const ForgetPassword = () => {
             user_email: email
         };
         try{
-          const response = await axios.post("http://localhost:4000/api/user/forgot-password",payload);
+          const response = await axios.post("https://backend-authentication-jrpf.onrender.com/api/user/forgot-password",payload);
           if(response.data.status === 200) {
               toast.success(response.data.message)
               navigate('/login');

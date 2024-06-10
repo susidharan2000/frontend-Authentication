@@ -11,7 +11,7 @@ const ResetPassword = () => {
     const handleSubmit = async(e)=>{
         e.preventDefault();
         try{
-        const response = await axios.post( `http://localhost:4000/api/user/reset-password/${id}/${token}`,{password});
+        const response = await axios.post( `https://backend-authentication-jrpf.onrender.com/api/user/reset-password/${id}/${token}`,{password});
             navigate('/login');
         
     }
