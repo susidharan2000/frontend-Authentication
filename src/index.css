@@ -1,0 +1,59 @@
+.navbar-nav .nav-item {
+    margin-right: 50px; 
+  }
+  .navbar-nav .nav-item .nav-link {
+    position: relative;
+    transition: color 0.3s; 
+  }
+  .navbar-nav .nav-item .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #00ff6a; 
+    transition: all 0.5s;
+  }
+  .card{
+    box-shadow: 3px 3px 3px rgb(157, 157, 157);
+    border: 0.5px solid rgb(157, 157, 157);
+  }
+  .card:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 0.5s;
+  }
+.title{
+  font-size: x-large;
+}
+.author{
+  font-size: 0.8rem;
+}
+.status{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.col{
+  height: 24rem;
+  margin-top: 30px;
+}
+.nav-link.active {
+  content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #00ff6a;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
