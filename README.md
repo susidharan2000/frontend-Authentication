@@ -31,7 +31,7 @@
  - react-router-dom
  - react-toastify
 
-#### API_LINK: https://backend-authentication-jrpf.onrender.com
+#### API: https://github.com/susidharan2000/backend-Authentication
 
  ## Credits
 - Developed by susidharan
